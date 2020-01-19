@@ -34,7 +34,7 @@ end
 else
 print('\27[1;31m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n لم يتم حفظ التوكن ارسل لي التوكن الان')
 end 
-os.execute('lua MARCOS.lua')
+os.execute('MARCOS.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
 io.write('\27[1;35m\n ارسل لي ايدي المطور الاساسي ↓ :\n\27[0;33;49m')
@@ -45,7 +45,7 @@ database:set(id_server..":SUDO:ID",SUDOID)
 else
 print('\27[1;31m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
 end 
-os.execute('lua MARCOS.lua')
+os.execute('MARCOS.lua')
 end
 local create_config_auto = function()
 config = {
@@ -9462,7 +9462,7 @@ local texting = {"شبيه الشكره ام الوصخ 🤭😹","حبيته ف
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
-if text == "🙊" or text == "🙈" then
+if text == "🙊" or text == "??" then
 if not database:get(bot_id..'lock:reply'..msg.chat_id_) then
 local texting = {"اول مره اشوف قرد يستحي🤔😂","ما مرجيه منك هايه صاير تستحي انته هوايه 😍😂😂" }
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
