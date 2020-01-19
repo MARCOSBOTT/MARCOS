@@ -34,7 +34,7 @@ end
 else
 print('\27[1;31m┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉\n لم يتم حفظ التوكن ارسل لي التوكن الان')
 end 
-os.execute('lua MARCOS.lua')
+os.execute('lua BOYKA.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
 io.write('\27[1;35m\n ارسل لي ايدي المطور الاساسي ↓ :\n\27[0;33;49m')
