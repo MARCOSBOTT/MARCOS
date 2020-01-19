@@ -55,7 +55,7 @@ SUDO = database:get(id_server..":SUDO:ID"),
 create(config, "./Info.lua")   
 end 
 create_config_auto()
-file = io.open("MARCOS", "w")  
+file = io.open("BOYKA", "w")  
 file:write([[
 #!/usr/bin/env bash
 cd $HOME/BOYKA
